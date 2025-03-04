@@ -1,29 +1,10 @@
-🔹 **Explanation of the Trading Bot**
-    - Fetches market data from Binance every 60 seconds.
-    - Uses a Simple Moving Average (SMA) Crossover strategy:
-    - If SMA_5 crosses above SMA_20 → BUY
-    - If SMA_5 crosses below SMA_20 → SELL
-    - Places market buy/sell orders accordingly.
-    - The bot waits for 60 seconds before re-evaluating the market.
+Markov chain —> ML assessment and rescore—> Markov chain 2 —> ML validation —> Random Forest —> RNN strategy selection via pseudo-forest—> execution
+Microstructure noise, Fractal dimensions, Hust exponent and Bid/ask volume imbalance + L2/L3
 
-📌 **How to Test Sell Signals?**
-**Option 1: Reduce Sleep Time**
-    You can reduce the time interval between market evaluations, e.g.:
 
-    ```Python 
-    time.sleep(10)  # Wait only 10 seconds before checking again
-    ```
-    This allows the bot to detect sell signals faster.
+Leverage orders auto, SL and TP With Trailing Stop Loss
 
-**Option 2: Use a Smaller Timeframe**
-    Change:
 
-    ```Python
-    timeframe = '1m'  # 1-minute candles
-    ```
-    To:
+1min,15min,1hr,8hr
 
-    ```Python
-    timeframe = '15s'  # 15-second candles (smaller timeframe)
-    ```
-    This lets the bot see trend changes faster, but increases API calls.
+Cannot seem to allow API Key for Futures
